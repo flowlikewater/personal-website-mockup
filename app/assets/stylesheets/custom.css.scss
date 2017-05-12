@@ -1,0 +1,89 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.centeralign {
+  text-align: center;
+}
+
+.bio {
+  line-height: 25px;
+  border: 5px solid yellow;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 10px;
+}
+
+#portfolio {
+  padding-top: -50px;
+}
+
+#about-me-part1 {
+  margin-bottom: 58px;
+}
+
+#services {
+  margin-top: -5%;
+  }
+
+.titleunderlign{
+  border-bottom: 1px solid #84DAED;
+  margin-bottom: 2%;
+}
+
+.sub-title {
+  font-size: 28px;
+}
+
+.title-quote {
+  font-style: italic;
+  text-align: center;
+}
+
+
+.icon:hover {
+  color: red;
+}
+
+.ulist {
+  list-style: none;
+  padding: 0;
+}
+
+.glyphicon-star {
+  color:#DFE0E0;
+}
+
+.filled {
+  color:#22A39F;
+}
+
+.ability:hover{
+  background-color:#f6f6f6;
+  border-radius: 5px;
+}
+
+.ability{
+  padding:5px 0px;
+  height:30px;
+  line-height: 18px;
+}
+
+.ability:hover .ability-score{
+  transition-duration: 0.3s;
+  letter-spacing: 1px;
+}
+
+.ability-score{
+  text-align: right;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.ability-title{
+  font-size: 18px;
+}
+
+.abilityrow{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

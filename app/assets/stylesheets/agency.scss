@@ -20,6 +20,7 @@ p {
 p.large {
   font-size: 16px;
 }
+
 a,
 a:hover,
 a:focus,
@@ -225,8 +226,9 @@ fieldset[disabled] .btn-xl.active {
     font-size: 1.5em;
   }
 }
+
 header {
-  background-image: url('../assets/images/header-bg.jpg');
+  background-image: url("/assets/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -298,6 +300,11 @@ section h3.section-subheading {
     padding: 150px 0;
   }
 }
+
+#services {
+  margin-bottom: -80px;
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -367,6 +374,7 @@ section h3.section-subheading {
     margin: 0 0 30px;
   }
 }
+
 .timeline {
   list-style: none;
   padding: 0;
