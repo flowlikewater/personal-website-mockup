@@ -43,7 +43,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Kevin Cho</a>
+                <a class="navbar-brand page-scroll" id='name1' href="#page-top">Kevin Cho</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,13 +53,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Skills</a>
+                        <a class="page-scroll" href="#services">About me</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Timeline</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
@@ -78,8 +78,15 @@
     <header>
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">KEVIN CHO</div>
-          <div class="intro-heading">I FUCK</div>
+          <div class="intro-lead-in" id='name2'>KEVIN CHO</div>
+
+          <div class='row'>
+              <%= render 'typing' %>
+          </div>
+
+          <br>
+          <br>
+
           <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
         </div>
       </div>
@@ -101,24 +108,24 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Total duration learning:</h4>
-            <p class="text-muted">< 4 months </p>
+            <h4 class="service-heading">Total Duration Learning</h4>
+            <h3 class="text-muted">< 4 months </h3>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Total hours of Coding</h4>
-            <p class="text-muted">1000+ hours</p>
+            <h4 class="service-heading">Total Hours Coding</h4>
+            <h3 class="text-muted">1000+ hours</h3>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Total projects completed</h4>
-            <p class="text-muted">~ 50</p>
+            <h4 class="service-heading">Total Projects Completed</h4>
+            <h3 class="text-muted">~ 40</h3>
           </div>
         </div>
         <hr>
@@ -345,7 +352,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">About</h2>
+            <h2 class="section-heading">My Timeline</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
@@ -353,70 +360,60 @@
           <div class="col-lg-12">
             <ul class="timeline">
               <li>
-                <div class="timeline-image">
-                  <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                <div class="timeline-image" id='graduate'>
+                  <img class="img-circle img-responsive" src="http://icon-icons.com/icons2/38/PNG/512/studentmeets_4873.png" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
+                    <h4>2012-2015</h4>
+                    <h4 class="subheading">My Humble Beginnings</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted"> I graduated from Warwick Business School with a degree in Accounting and Finance. While in university, I founded a pro-bono management consultancy - 180 Degrees Consulting Warwick, which researched and developed sustainable solutions for NGOs</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                  <img class="img-circle img-responsive" src="assets/wolf.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
+                    <h4>2015-2017</h4>
+                    <h4 class="subheading">Life as an investment banker</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">I worked as an investment banker in Oppenheimer till the end of 2016. I helped raise money and made M&A recommendations for technology start-ups around the world. Despite my gruelling working hours in investment banking, I still found time to pick up HTML, CSS and Javascript</p>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="timeline-image">
-                  <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                  <img class="img-circle img-responsive" src="assets/coder.png" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
+                    <h4>2017 - Present</h4>
+                    <h4 class="subheading">Transition to Software Engineering</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">I developed a passion for coding and entrepreneurship, and decided to <strong>quit my job</strong> study coding full time. Since then, I have been practicing coding <u>every single day</u></p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
+                <div class="timeline-image" style='color: black;'>
                   <h4>Be Part
-                    <br>Of Our
+                    <br>Of My
                     <br>Story!
                   </h4>
                 </div>
               </li>
             </ul>
+            <div class='row' style='text-align: center; padding: 100px; margin-top: -50px;'>
+              <h1>I can help</h1>
+              <p style='font-size: 15px;'>I'm currently available for freelance work. If you have a project you think I can help out with or just want to say hello, drop me a message!</p>
+            </div>
           </div>
         </div>
       </div>
@@ -427,55 +424,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Get in touch!</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
+                </div>
+                <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
+                        <img src="assets/profile.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Kevin Cho</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            <li><a href="mailto:cho.kevin@hotmail.com?Subject=Hello%20again"><i class="fa fa-email"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/kevin123abc"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.linkedin.com/in/chokevin1/"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="assets/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="assets/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
             <div class="row">
